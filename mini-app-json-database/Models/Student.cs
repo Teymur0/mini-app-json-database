@@ -33,7 +33,7 @@ namespace mini_app_json_database.Models
             Name = name;
             Surname = surname;
         }
-        public void PrintALlStudents()
+        public static void PrintALlStudents()
         {
             var classrooms = CustomDataBaseService.LoadFiles();
             foreach (var classroom in classrooms)
@@ -48,7 +48,7 @@ namespace mini_app_json_database.Models
 
 
         }
-        public void PrintStudentsByClassRoomId(int classroomId)
+        public static void PrintStudentsByClassRoomId(int classroomId)
         {
             var classrooms = CustomDataBaseService.LoadFiles();
             Classroom classroom = null;
